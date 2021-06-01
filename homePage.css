@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url("./static/italian-food.jpg");
+  background-size: cover;
+}
+ul li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+nav {
+  width: 8rem;
+  display: inline;
+  float: left;
+}
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+button {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid transparent;
+  outline: none;
+  background-color:transparent;
+}
+.logo {
+  margin: 1rem;
+  height: 3rem;
+  width: auto;
+}
+.button_list {
+  display:flex;
+  flex-direction: column;
+}
+.small_btn {
+  display: none;
+  width: max-content;
+}
+.big_btn > h1 {
+  font-size: 1.3rem;
+}
+.big_btn:hover {
+  background-color: grey;
+}
+.menu > .big_btn:hover + .small_btn{
+  display:block;
+}
+.about > .big_btn:hover + .small_btn{
+  display:block;
+}
+.contact > .big_btn:hover + .small_btn{
+  display:block;
+}
+.small_btn:hover {
+  display: block;
+}
+.small_btn > li > a {
+  font-size: 1rem;
+  text-decoration: none;
+  line-height:1rem;
+  display: block;
+  width: max-content;
+  height: 1rem;
+  margin:0 0 0 1.5rem;
+  padding: 0.5rem;
+}
+.small_btn > li > a:hover {
+  background-color: grey;
+}
+.container {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 100%;
+  position: right;
+}
+.deals, .recipes, .news {
+  background-color: black;
+  width: 19rem;
+  height: 27rem;
+  overflow-y: scroll;
+  border: 0.01rem solid white;
+  padding: 0.5rem;
+  border-radius: 3%;
+  margin: 0.5rem;
+}
+.deals::-webkit-scrollbar {
+  display: none;
+}
+.news::-webkit-scrollbar {
+  display: none;
+}
+.recipes::-webkit-scrollbar {
+  display: none;
+}
+.recipes>div>p>span, .news>ul>li>span, .deals>dd>ul>li>span {
+  font-size: x-large;
+  font:italic 2.5rem Georgia, serif; 
+
+}
+#address {
+  position: absolute;
+  left: 10%;
+}
+.news_li:hover {
+  box-shadow:inset 2px 2px 1px grey;
+  font-size: 1.05rem;
+}
+.topic_title_deals {
+  background-image: url("./static/dating.jpg");
+}
+.topic_title_cooking {
+  background-image: url("./static/cooking.jpg");
+}
+.topic_title_news {
+  background-image: url("./static/news.jpg");
+  
+}
+.topic_title_news, .topic_title_cooking, .topic_title_deals {
+  background-size: cover;
+  height: 8rem;
+  font-size: larger;
+  text-align: center;
+  line-height: 8rem;
+  margin-bottom: 0.8rem;
+  
+}
+.topic_title_font {
+  background-color: rgba(3, 20, 248, 0.5);
+}
+@media screen and (max-width:411px){
+  html{font-size:110%;}
+  nav {
+    width: 100%;
+    float: inherit;
+    height: 300px;
+    line-height: 300px;
+    width: 100%;
+    text-align: center;
+  }
+}

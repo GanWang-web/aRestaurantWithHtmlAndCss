@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	vertical-align: baseline;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-image: url("static/italian-food.jpg");
+	background-size: cover;
+
+}
+
+button {
+	margin: 0;
+	padding: 0.5rem;
+	border: 1px solid transparent;
+	outline: none;
+	background-color: transparent;
+}
+
+.container {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 28rem;
+	width: 20rem;
+	background-color: aliceblue;
+	line-height: 1.5rem;
+	padding: 0.5rem;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 3%;
+}
+
+.title {
+	font: italic 1.5rem Georgia, serif;
+	text-align: center;
+	cursor: crosshair;
+	line-height: 3rem;
+}
+
+.btns {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.submit, .reset {
+	cursor: pointer;
+}
+
+.submit>img, .reset>img {
+	width: 1.5rem;
+	height: auto;
+}
+
+label, input, select, textarea {
+	margin: 0.3rem;
+}
+
+@media screen and (max-width:451px) {
+	html {
+		width: 100%;
+	}
+	* {
+		font-size: 95%;
+	}
+}
